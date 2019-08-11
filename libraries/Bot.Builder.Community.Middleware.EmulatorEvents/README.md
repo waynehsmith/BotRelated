@@ -1,10 +1,5 @@
 ## Emulator Events Middleware
 
-### Build status
-| Branch | Status | Recommended NuGet package version |
-| ------ | ------ | ------ |
-| master | [![Build status](https://ci.appveyor.com/api/projects/status/b9123gl3kih8x9cb?svg=true)](https://ci.appveyor.com/project/garypretty/botbuilder-community) | [![NuGet version](https://img.shields.io/badge/NuGet-1.0.39-blue.svg)](https://www.nuget.org/packages/Bot.Builder.Community.Middleware.EmulatorEvents/) |
-
 ### Description
 This is part of the [Bot Builder Community Extensions](https://github.com/garypretty/botbuilder-community) project which contains various pieces of middleware, recognizers and other components for use with the Bot Builder .NET SDK v4.
 
@@ -21,7 +16,7 @@ Install into your project using the following command in the package manager;
 
 ### Sample
 
-A basic sample for using this component can be found [here](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/master/samples/EmulatorEvents).
+A basic sample for using this component can be found [here](https://github.com/weretygr/BotRelated/tree/master/samples/Bot.Builder.Community.Middleware.EmulatorEvents.Samples).
 
 ### Usage
 

@@ -6,13 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bot.Builder.Community.Middleware.EmulatorEvents" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.5.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\libraries\Bot.Builder.Community.Middleware.EmulatorEvents\Bot.Builder.Community.Middleware.EmulatorEvents.csproj" />
   </ItemGroup>
 
   <ItemGroup>
