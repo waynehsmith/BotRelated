@@ -1,0 +1,8 @@
+.vscode/
+.vs/
+*.sln
+libraries/Bot.Builder.Community.Middleware.EmulatorEvents/obj/
+libraries/Bot.Builder.Community.Middleware.EmulatorEvents/bin/
+libraries/Bot.Builder.Community.Middleware.EmulatorEvents/.vs/
+samples/Bot.Builder.Community.Middleware.EmulatorEvents.Samples/bin/
+samples/Bot.Builder.Community.Middleware.EmulatorEvents.Samples/obj/

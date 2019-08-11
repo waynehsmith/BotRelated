@@ -1,0 +1,17 @@
+{
+  "type": "emulatorEvent",
+  "payload": 
+  {
+    "name": "complexPhone",
+    "userData": {
+      "email": "John.Doe@contoso.com",
+      "givenName": "John",
+      "surName": "Doe",
+      "phone": {
+        "areaCode": "111",
+        "number": "555-1212",
+        "extension": "1234"
+      }
+    }
+  }
+}

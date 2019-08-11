@@ -1,2 +1,2 @@
 # BotRelated
-Any Bot Framework related artifacts
+Home of Bot Framework related artifacts

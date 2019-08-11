@@ -1,0 +1,8 @@
+{
+  "type": "emulatorEvent",
+  "payload": 
+  {
+    "name": "singleValue",
+    "value": "simpleValue"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "emulatorEvent",
+  "payload": 
+  {
+    "name": "complexValue",
+    "value": {
+      "email": "John.Doe@contoso.com",
+      "givenName": "John",
+      "surName": "Doe"
+    }
+  }
+}
