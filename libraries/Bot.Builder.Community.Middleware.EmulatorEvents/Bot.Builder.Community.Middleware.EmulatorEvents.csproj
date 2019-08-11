@@ -1,20 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Description>Middleware extensions for Bot Builder v4 SDK that allows you to send payloads to a bot thru the emulator that act as though they were events</Description>
     <Authors>Bot Builder Community</Authors>
     <Company>Bot Builder Community</Company>
-    <PackageLicenseUrl>https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/</PackageProjectUrl>
     <Version>1.0.0</Version>
     <PackageTags>bot framework, bot builder, azure bot service, middleware</PackageTags>
     <FileVersion>1.0.0</FileVersion>
     <AssemblyVersion>1.0.0</AssemblyVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageIconUrl>https://bot-framework.azureedge.net/static/58168-ae253ca613/intercom-webui/v1.6.2/assets/landing-page/images/BotFrame_Logo_Icon.png</PackageIconUrl>
+    <Copyright>Wayne Smith</Copyright>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Bot.Builder" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

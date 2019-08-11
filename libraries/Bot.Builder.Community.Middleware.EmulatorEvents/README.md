@@ -72,6 +72,17 @@ Within the startup code for the bot, add the following lines during middleware c
 ```cs
     services.AddSingleton<EmulatorEventProcessor>();
 ```
+In addition, add the processor to the Adapter as middleware to be used.  In the sample bot, in the **AdapterWithErrorHandler.cs** file the Adapter constructor was modified as follows:
+
+```cs
+    public AdapterWithErrorHandler(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger
+    , EmulatorEventProcessor eep)
+    : base(configuration, logger)
+    {
+
+        // Instruct the bot to use the EmulatorEventProcessor
+        Use(eep);
+```
 
 ### Advanced
 The emulator event processor has properties and methods that can be set to alter its behavior.
