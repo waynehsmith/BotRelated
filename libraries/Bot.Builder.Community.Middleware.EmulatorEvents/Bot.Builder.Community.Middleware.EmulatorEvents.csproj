@@ -6,9 +6,9 @@
     <Authors>Bot Builder Community</Authors>
     <Company>Bot Builder Community</Company>
     <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/</PackageProjectUrl>
-    <Version>1.0.0</Version>
-    <PackageTags>bot framework, bot builder, azure bot service, middleware</PackageTags>
+    <PackageProjectUrl>https://github.com/weretygr/BotRelated/tree/master/libraries/Bot.Builder.Community.Middleware.EmulatorEvents</PackageProjectUrl>
+    <Version>1.0.1</Version>
+    <PackageTags>bot framework, bot builder, azure bot service, middleware, emulator, events</PackageTags>
     <FileVersion>1.0.0</FileVersion>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -17,6 +17,8 @@
     <PackageIconUrl>https://bot-framework.azureedge.net/static/58168-ae253ca613/intercom-webui/v1.6.2/assets/landing-page/images/BotFrame_Logo_Icon.png</PackageIconUrl>
     <Copyright>Wayne Smith</Copyright>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageReleaseNotes>Updated package to point to correct project and sample</PackageReleaseNotes>
+    <RepositoryUrl></RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
