@@ -27,7 +27,7 @@ The following pieces of middleware are currently available;
 
 | Name | Description | Sample? | NuGet |
 | ------ | ------ | ------ | ------ |
-| [Emulator Events Middleware](libraries/Bot.Builder.Community.Middleware.EmulatorEvents) | This middleware allows the emulator to send custom events| | [![NuGet version](https://img.shields.io/badge/NuGet-1.0.76-blue.svg)](https://www.nuget.org/packages/Bot.Builder.Community.Middleware.EmulatorEvents/) |
+| [Emulator Events Middleware](libraries/Bot.Builder.Community.Middleware.EmulatorEvents) | This middleware allows the emulator to send custom events| [Sample](https://github.com/weretygr/BotRelated/tree/master/samples/Bot.Builder.Community.Middleware.EmulatorEvents.Samples) | [![NuGet version](https://img.shields.io/badge/NuGet-1.0.76-blue.svg)](https://www.nuget.org/packages/Bot.Builder.Community.Middleware.EmulatorEvents/) |
 
 
 ## Dialogs and Prompts
