@@ -6,3 +6,7 @@ libraries/Bot.Builder.Community.Middleware.EmulatorEvents/bin/
 libraries/Bot.Builder.Community.Middleware.EmulatorEvents/.vs/
 samples/Bot.Builder.Community.Middleware.EmulatorEvents.Samples/bin/
 samples/Bot.Builder.Community.Middleware.EmulatorEvents.Samples/obj/
+/libraries/Bot.Builder.Community.WebChatStyling/bin
+/libraries/Bot.Builder.Community.WebChatStyling/obj
+/libraries/Bot.Builder.Community.WebChatStylingTests/bin
+/libraries/Bot.Builder.Community.WebChatStylingTests/obj

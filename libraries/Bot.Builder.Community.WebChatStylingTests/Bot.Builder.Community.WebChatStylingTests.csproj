@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\OptionNames.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Bot.Builder.Community.WebChatStyling\Helpers\EnumHelpers.cs" Link="Helpers\EnumHelpers.cs" />
+    <Compile Include="..\Bot.Builder.Community.WebChatStyling\Helpers\RandomHelper.cs" Link="Helpers\RandomHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\OptionNames.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bot.Builder.Community.WebChatStyling\Bot.Builder.Community.WebChatStyling.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+</Project>
