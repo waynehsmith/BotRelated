@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.IO;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Bot.Builder.Community.WebChatStyling.Tests
 {
@@ -266,6 +267,27 @@ namespace Bot.Builder.Community.WebChatStyling.Tests
             options.SpinnerAnimation = oSpinner;
             options.TypingAnimation = oTyping;
             options.UploadThumbnail = oUpload;
+        }
+
+        [TestMethod]
+        public void CheckDefault()
+        {
+
+            var r = new Random();
+            var options = WebChatStyleOptions.Default;
+
+            var so = new JObject();
+            StylingOption.PopulateJObject(options, so, true);
+            var p = GetRelativeFileName("OptionNames.txt");
+            var expected = File.ReadAllLines(p).ToList();
+            var actual = so.Properties().Select(p => p.Name).ToList();
+            var missing = expected.Except(actual).ToList();
+            var missingNames = String.Empty;
+            if (missing.Count > 0)
+            {
+                missingNames = String.Join(',', missing);
+            }
+            Assert.AreEqual(0, missing.Count, $"{missing.Count} name(s) are missing from WebChatOptions\n{missingNames}");
         }
     }
 }

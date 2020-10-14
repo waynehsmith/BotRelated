@@ -6,10 +6,10 @@
     <Authors>Bot Builder Community</Authors>
     <Company>Bot Builder Community</Company>
     <PackageProjectUrl>https://github.com/weretygr/BotRelated/tree/master/libraries/Bot.Builder.Community.WebChatStyling</PackageProjectUrl>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageTags>bot framework, bot builder, azure bot service, webchat, styling</PackageTags>
-    <FileVersion>1.0.1.0</FileVersion>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
     
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
@@ -18,7 +18,7 @@
     <PackageIconUrl></PackageIconUrl>
     <Copyright>Wayne Smith</Copyright>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageReleaseNotes>Added member to populate JObject (via StylingAttribute) to StylingOption</PackageReleaseNotes>
+    <PackageReleaseNotes>Added Default member to WebChatStyleOptions to use in populating default stylesheet</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
