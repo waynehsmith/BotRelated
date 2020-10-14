@@ -130,5 +130,38 @@ namespace Bot.Builder.Community.WebChatStyling
         public virtual IList<string> GetOptionNames() {
             return GetOptionNames(this);
         }
+
+        public static void PopulateJObject<T>(T source, JObject options, bool useDefault = false) where T : class
+        {
+            var srcType = typeof(T);
+            var currentMembers = srcType.GetProperties();
+            for (int i = 0; i < currentMembers.Length; i++)
+            {
+                var currentMember = currentMembers[i] as PropertyInfo;
+                var sAttributes = currentMember.GetCustomAttributes<StylingAttribute>();
+                if (sAttributes.Count() > 0)
+                {
+                    string effectiveName = String.Empty;
+                    dynamic effectiveValue = null;
+                    bool populated = false;
+                    foreach (var sa in sAttributes)
+                    {
+                        if (sa.AttributeCategory.HasFlag(StylingAttributeCategory.Option))
+                        {
+                            populated = true;
+                            var completeOption = currentMember.GetGetMethod().Invoke(source, null) as StylingOption;
+                            completeOption?.PopulateOptions(options, useDefault);
+                        }
+
+                    }
+                    if (!populated && ((effectiveValue != null) || useDefault))
+                    {
+
+                        options[effectiveName] = effectiveValue != null ? JToken.FromObject(effectiveValue) : null;
+                    }
+                }
+
+            }
+        }
     }
 }

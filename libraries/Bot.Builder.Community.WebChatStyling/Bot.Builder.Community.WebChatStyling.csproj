@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Description></Description>
+    <Description>This package provides supporting SDK style methods to create a StyleSet for use in styling the WebChat control for use with the Microsoft Bot Framework</Description>
     <Authors>Bot Builder Community</Authors>
     <Company>Bot Builder Community</Company>
     <PackageProjectUrl>https://github.com/weretygr/BotRelated/tree/master/libraries/Bot.Builder.Community.WebChatStyling</PackageProjectUrl>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageTags>bot framework, bot builder, azure bot service, webchat, styling</PackageTags>
-    <FileVersion>1.0.0</FileVersion>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
     
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
@@ -18,6 +18,11 @@
     <PackageIconUrl></PackageIconUrl>
     <Copyright>Wayne Smith</Copyright>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageReleaseNotes>Added member to populate JObject (via StylingAttribute) to StylingOption</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
